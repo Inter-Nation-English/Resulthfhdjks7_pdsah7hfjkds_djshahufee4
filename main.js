@@ -3,6 +3,7 @@ const ScoreWriting = document.getElementById("ScoreWriting")
 const ScoreReading = document.getElementById("ScoreReading")
 const ScoreListeting = document.getElementById("ScoreListeting")
 
+
 const PhoneNumber = document.getElementById("PhoneNumber")
 
 const OverScore = document.getElementById("OverAll")
@@ -66,3 +67,89 @@ function CheckingSizeOfDisplay(){
 function ChangeOpacity(){
     BlockPage.style.opacity = "10";
 }
+
+
+const old1 = document.getElementById("Old1");
+old1.addEventListener('click' , function(){
+    if (old1.style.height == "680px"){
+        old1.classList.add("toClose1");
+    setTimeout(function(){
+        old1.style.height = "100px"
+        old1.classList.remove("toClose1")
+    } , 500)
+    }else{
+    old1.classList.add("toOpened1");
+    setTimeout(function(){
+        old1.style.height = "680px"
+        old1.classList.remove("toOpened1")
+    } , 500)
+}
+});
+
+const old2 = document.getElementById("Old2");
+old2.addEventListener('click' , function(){
+    if (old2.style.height == "680px"){
+        old2.classList.add("toClose2");
+    setTimeout(function(){
+        old2.style.height = "100px"
+        old2.classList.remove("toClose2")
+    } , 500)
+    }else{
+    old2.classList.add("toOpened2");
+    setTimeout(function(){
+        old2.style.height = "680px"
+        old2.classList.remove("toOpened2")
+    } , 500)
+}
+});
+
+const old3 = document.getElementById("Old3");
+old3.addEventListener('click' , function(){
+    if (old3.style.height == "680px"){
+        old3.classList.add("toClose2");
+    setTimeout(function(){
+        old3.style.height = "100px"
+        old3.classList.remove("toClose2")
+    } , 500)
+    }else{
+        old3.classList.add("toOpened2");
+    setTimeout(function(){
+        old3.style.height = "680px"
+        old3.classList.remove("toOpened2")
+    } , 500)
+}
+});
+
+const old4 = document.getElementById("Old4");
+old4.addEventListener('click' , function(){
+    if (old4.style.height == "680px"){
+        old4.classList.add("toClose2");
+    setTimeout(function(){
+        old4.style.height = "100px"
+        old4.classList.remove("toClose2")
+    } , 500)
+    }else{
+        old4.classList.add("toOpened2");
+    setTimeout(function(){
+        old4.style.height = "680px"
+        old4.classList.remove("toOpened2")
+    } , 500)
+}
+});
+
+const old5 = document.getElementById("Old5");
+old5.addEventListener('click' , function(){
+    if (old5.style.height == "720px"){
+        old5.classList.add("toClose2");
+    setTimeout(function(){
+        old5.style.height = "100px"
+        old5.classList.remove("toClose2")
+    } , 500)
+    }else{
+        old5.classList.add("toOpened2");
+    setTimeout(function(){
+        old5.style.height = "720px"
+        old5.classList.remove("toOpened2")
+    } , 500)
+}
+});
